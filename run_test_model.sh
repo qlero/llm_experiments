@@ -9,7 +9,7 @@ source /opt/intel/openvino/setupvars.sh # should output: /opt/intel/openvino_202
 export GGML_OPENVINO_DEVICE=GPU
 
 # To run llama-simple:
-# ./build/ReleaseOV/bin/llama-simple -m ./models/meta-llama-3.1-8B-instruct-q8_0.gguf -n 50 "The story of AI is "
+../llama.cpp/build/ReleaseOV/bin/llama-simple -m ./models/N-Bot-Int--OpenElla-StoryWriter-TypeB-Q8_0.gguf -n 50 "Can you explain to me how a programming compiler function? For instance, for compiling C code. Thanks."
 
 # To run in chat mode:
-../llama.cpp/build/ReleaseOV/bin/llama-cli -m ./models/meta-llama-3.1-8B-instruct-q8_0.gguf
+../llama.cpp/build/ReleaseOV/bin/llama-cli -m ./models/N-Bot-Int--OpenElla-StoryWriter-TypeB-Q8_0.gguf
